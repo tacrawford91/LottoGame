@@ -2,15 +2,19 @@
 
 // functions 
 function generate() {
-    var randomNumber = Math.floor(Math.random()*9999999);
-    return randomNumber;
+    var num = "";
+    for(i=0;i<8;i++) {
+        var random = Math.floor(Math.random() * 9)+ 1;
+        num = random + num;
+    };
+    return num
 }
-
+console.log(generate);
 
 
 $("button").on("click", function(event){
     var newNumber = generate();
-    $(".numbers").append($("<h1>").text(newNumber));
+    $(".numbers").prepend($("<h1>").text(newNumber));
 })
 
 //gerate random number 7 
