@@ -2,7 +2,8 @@
 
 // functions 
 function generate() {
-    var randomNumber = Math.floor(Math.random()*9999999);
+    var randomNumber = Math.floor(Math.random()*999);
+    return randomNumber;
 }
 
 $("button").on("click", function(event){
