@@ -4,7 +4,7 @@
 function generate() {
     var num = "";
     for(i=0;i<8;i++) {
-        var random = Math.floor(Math.random() * 9)+ 1;
+        var random = Math.floor(Math.random() * 9);
         num = random + num;
     };
     return num;
