@@ -3,7 +3,7 @@
 // functions 
 function generate() {
     var randomNumber = Math.floor(Math.random()*9999999);
-    return randomNumber;
+    return randomNumber.toString();
 }
 
 
