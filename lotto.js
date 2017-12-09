@@ -10,7 +10,7 @@ function generate() {
 
 $("button").on("click", function(event){
     var newNumber = generate();
-    $(".numbers").append($("<h1>").text(newNumber));
+    $(".numbers").prepend($("<h1>").text(newNumber));
 })
 
 //gerate random number 7 
