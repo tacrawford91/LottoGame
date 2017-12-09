@@ -6,11 +6,13 @@ function generate() {
     return randomNumber;
 }
 
+var numberArray = []
+
 $("button").on("click", function(event){
     var newNumber = generate();
     var newH1 = $("<h1></h1>")
-    $("newH1").text(newNumber);
-    $(".numbers").append(newH1);
+    $("h1").text(numberArray);
+    $(".numbers").append(numberArray);
 
 })
 //gerate random number 7 
